@@ -30,8 +30,8 @@ public class CategoriaController {
     }
     
     @DeleteMapping("/{id}")
-    public ResponseEntity<Void> deleteCategoria(@PathVariable Long id) {
-        categoriaService.deleteCategoria(id);
+    public ResponseEntity<Void> deleteCategoria(@PathVariable Long id, Categoria categoria) {
+        categoriaService.deleteCategoria(id, categoria);
         return ResponseEntity.noContent().build(); // Devuelve un 204 No Content
     }
 }

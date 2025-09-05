@@ -27,4 +27,6 @@ public class Categoria {
     // es gestionada por el campo 'categoria' en la entidad Producto.
     @OneToMany(mappedBy = "categoria")
     private List<Producto> productos;
+
+
 }
